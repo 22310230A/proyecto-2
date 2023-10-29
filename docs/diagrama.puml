@@ -41,7 +41,7 @@ class Personaje {
     + Moverder()
 }
 
-class Interruptor {
+class Palanca {
     + Activa_plataforma()
 }
 
@@ -56,11 +56,11 @@ Escenario *-- Plataforma
 Escenario *-- Puerta
 Escenario *-- Acido
 Escenario o-- Personaje
-Personaje --o Interruptor
+Personaje --o Palanca
 Personaje --o Boton
 Personaje --o Diamante
 Vida --o Personaje
 Diamante --|> Vida
-Plataforma --o Interruptor
+Plataforma --o Palanca
 Puerta --o Boton
 @enduml
